@@ -11,8 +11,15 @@ int main(void)
 {
     int intList[5] = {1, 2, 3, 4, 5};
     int index;
+    
     index = binarySearch(intList, 5, 2);
-    printf("%d\n", index);
+    
+    if (index == -1)
+        printf("Element not found");
+    else 
+        printf("Found element at intex %d\n", index);
+    
+    return 0;
 }
 
 int binarySearch(int *list, int size, int searchValue)
@@ -38,4 +45,5 @@ int binarySearch(int *list, int size, int searchValue)
             high = mid - 1;
         }
     }
+    return -1;
 }
