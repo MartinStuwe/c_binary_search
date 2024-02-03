@@ -10,7 +10,6 @@ int binarySearch(int *list, int size, int searchValue);
 int main(void)
 {
     int intList[5] = {1, 2, 3, 4, 5};
-    int *p;
     int index;
     index = binarySearch(intList, 5, 2);
     printf("%d\n", index);
